@@ -72,7 +72,7 @@ export default function Todo(){
                     {
                         addTask.map((el)=>(
                             <li key={addTask.id}><span style={el.isDone?{textDecorationLine:"line-through"}:{}}> {el.Task}</span>
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                             <button onClick={()=>del(el.id)}>Delete</button>
                             <input onChange={()=>doneHandle(el.id)}type='checkBox' style={divStyle}></input>
                             </li>
